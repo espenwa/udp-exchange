@@ -1,8 +1,6 @@
-# Fork: Docker container 
+# Fork: Docker container with shovel, federation and rabbitmq-udp-exchange plugins enabled 
 
-This is my source for building a docker container with RabbitMQ 3.4.4, shovel, federation and rabbitmq-udp-exchange plugins enabled.
-
-For more information about the udp-exchange see https://github.com/marcelmaatkamp/udp-exchange and the docker image can be found at https://registry.hub.docker.com/u/marcelmaatkamp/rabbitmq-udp-exchange/
+This is my source for building a docker container with RabbitMQ 3.4.4, shovel, federation and rabbitmq-udp-exchange plugins enabled. For more information about the udp-exchange see https://github.com/marcelmaatkamp/udp-exchange and the docker image can be found at https://registry.hub.docker.com/u/marcelmaatkamp/rabbitmq-udp-exchange/
 
 To start this image use the following command:
 ```
