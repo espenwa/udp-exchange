@@ -1,2 +1,2 @@
 #!/bin/bash
-docker build -t marcelmaaatkamp/rabbitmq-udp-exchange .
+docker build -t marcelmaatkamp/rabbitmq-udp-exchange .
