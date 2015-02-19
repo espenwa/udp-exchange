@@ -1,4 +1,4 @@
-# This is my fork to make a docker container witj RabbitMQ (3.4.4), shovel and federation plugins and rabbitmq-udp-exchange enabled
+# Fork: Docker container with RabbitMQ (3.4.4), shovel, federation and rabbitmq-udp-exchange plugins enabled
 
 See https://registry.hub.docker.com/u/marcelmaatkamp/rabbitmq-udp-exchange/
 ```
