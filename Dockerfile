@@ -1,5 +1,11 @@
 FROM rabbitmq:management
 
+RUN RUN rabbitmq-plugins enable --offline \
+  rabbitmq_federation \
+  rabbitmq_federation_management \
+  rabbitmq_shovel \
+  rabbitmq_shovel_management
+
 RUN apt-get update
 RUN apt-get install -y build-essential zip wget git python xsltproc erlang-dev erlang-src 
 
