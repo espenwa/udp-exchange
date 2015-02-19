@@ -24,3 +24,7 @@ ADD . /rabbitmq//rabbitmq-public-umbrella/udp-exchange
 WORKDIR /rabbitmq//rabbitmq-public-umbrella/udp-exchange
 
 RUN make
+
+COPY build/app/rabbit_udp_exchange-0.0.0 /usr/lib/rabbitmq/lib/rabbitmq_server-3.4.4/plugins
+RUN rabbitmq-plugins enable --offline \
+  rabbit_udp_exchange
