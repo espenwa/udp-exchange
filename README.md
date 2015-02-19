@@ -3,11 +3,11 @@
 See https://registry.hub.docker.com/u/marcelmaatkamp/rabbitmq-udp-exchange/
 ```
  $ docker run \
-   -name rabbitmq-udp \
-   --port 5672:5672 \
-   --port 15672:15672 \
-   --port 5673:5673/udp \
-   marcelmaatkamp/rabbitmq-udp-exchange
+ --name rabbitmq-udp \
+ -p 5672:5672 \
+ -p 15672:15672 \
+ -p 5673:5673/udp \
+ marcelmaaatkamp/rabbitmq-udp-exchange
 ```
 # RabbitMQ "UDP Exchange" Plugin
 
