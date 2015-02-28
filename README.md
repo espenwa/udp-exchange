@@ -1,15 +1,17 @@
-# Fork: Docker container with shovel, federation and rabbitmq-udp-exchange plugins enabled 
+# RabbitMQ with udp-exchange plugin enabled 
+
+This RabbitMQ as a docker container with the plugins management, shovel, federation and rabbitmq-udp-exchange enabled 
 
 This is my source for building a docker container with RabbitMQ 3.4.4, shovel, federation and rabbitmq-udp-exchange plugins enabled. For more information about the udp-exchange see [https://github.com/tonyg/udp-exchange] and the docker image itself can be found at [https://registry.hub.docker.com/u/marcelmaatkamp/rabbitmq-udp-exchange]
 
-To start this image use the following command:
+To start this image using docker use the following command:
 ```
  $ docker run \
  --name rabbitmq-udp \
  -p 5672:5672 \
  -p 15672:15672 \
  -p 5673:5673/udp \
- marcelmaaatkamp/rabbitmq-udp-exchange
+ marcelmaatkamp/rabbitmq-udp-exchange
 ```
 # RabbitMQ "UDP Exchange" Plugin
 
