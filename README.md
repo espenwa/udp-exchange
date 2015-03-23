@@ -34,6 +34,7 @@ To start this image using docker use the following command:
  -p 15672:15672 \
  -p 5673:5673/udp \
  -v /var/lib/rabbitmq:/var/lib/rabbitmq \
+ -v /var/log/rabbitmq:/var/log/rabbitmq \
  marcelmaatkamp/rabbitmq-udp-exchange
 ```
 # RabbitMQ "UDP Exchange" Plugin
