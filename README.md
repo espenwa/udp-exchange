@@ -16,14 +16,24 @@ Enabled plugins are:
  * rabbitmq_federation
  * rabbitmq_management_agent
  * amqp_client
+ 
+ =INFO REPORT==== 23-Mar-2015::12:06:28 ===
+node           : rabbit@e05eb5935c96
+home dir       : /var/lib/rabbitmq
+config file(s) : /etc/rabbitmq/rabbitmq.config
+cookie hash    : uiaAxk+GeC8xvCBkHgwbzQ==
+log            : tty
+sasl log       : /var/log/rabbitmq/rabbit@e05eb5935c96-sasl.log
+database dir   : /var/lib/rabbitmq/mnesia/rabbit@e05eb5935c96
 
 To start this image using docker use the following command:
 ```
- $ docker run \
+ $ docker -d run \
  --name rabbitmq-udp \
  -p 5672:5672 \
  -p 15672:15672 \
  -p 5673:5673/udp \
+ -v /var/lib/rabbitmq:/var/lib/rabbitmq \
  marcelmaatkamp/rabbitmq-udp-exchange
 ```
 # RabbitMQ "UDP Exchange" Plugin
