@@ -4,6 +4,19 @@ This RabbitMQ as a docker container with the plugins management, shovel, federat
 
 This is my source for building a docker container with RabbitMQ 3.4.4, shovel, federation and rabbitmq-udp-exchange plugins enabled. For more information about the udp-exchange see [https://github.com/tonyg/udp-exchange] and the docker image itself can be found at [https://registry.hub.docker.com/u/marcelmaatkamp/rabbitmq-udp-exchange]
 
+Enabled plugins are:
+ * rabbit_udp_exchange
+ * rabbitmq_shovel_management
+ * rabbitmq_federation_management
+ * rabbitmq_management
+ * rabbitmq_web_dispatch
+ * webmachine
+ * mochiweb
+ * rabbitmq_shovel
+ * rabbitmq_federation
+ * rabbitmq_management_agent
+ * amqp_client
+
 To start this image using docker use the following command:
 ```
  $ docker run \
