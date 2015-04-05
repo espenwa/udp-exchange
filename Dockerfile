@@ -28,4 +28,4 @@ RUN make
 RUN cp -r build/app/rabbit_udp_exchange-0.0.0 /usr/lib/rabbitmq/lib/rabbitmq_server-*/plugins
 RUN rabbitmq-plugins enable --offline rabbit_udp_exchange
 
-EXPOSE 5672 15672
+EXPOSE 5672 15672 25672
